@@ -1,4 +1,4 @@
-import { useState, ReactNode, memo, useRef, useEffect } from 'react';
+import { useState, memo, useRef, useEffect } from 'react';
 import { RiArrowDownSLine } from 'react-icons/ri';
 import { nanoid } from 'nanoid';
 
