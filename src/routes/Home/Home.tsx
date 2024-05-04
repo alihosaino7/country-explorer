@@ -6,8 +6,10 @@ import data from '../../data.json'
 
 export default function Home() {
 
+   const countriesList = [...data]
+
    const [query, setQuery] = useState('')
-   const [countries, setCountries] = useState<Country[]>([...data] as Country[])
+   const [countries, setCountries] = useState<Country[]>(countriesList as Country[])
    const [region, setRegion] = useState('')
 
    useEffect(() => {
@@ -28,10 +30,9 @@ export default function Home() {
       }
    }, [region])
 
-   console.log('Home')
 
    return (
-      <div className='text-[14px]'>
+      <div className='text-[14px] h-full'>
       <div className="md:flex justify-between align-center mb-12">
          <Search onChange={(e) => setQuery(e.target.value)} />
          <Select value={region} onChange={setRegion} />

@@ -15,7 +15,7 @@ export default function App() {
   return (
     <div className={`min-h-screen${dark ? ' dark bg-v-dark-blue-dark' : ''}`}>
       <Navbar />
-      <main className='py-12 h-[calc(100vh-60px)]'>
+      <main className='py-12 h-min-screen'>
         <Container>
           <Suspense fallback={<Loader />}>
             <Routes>
