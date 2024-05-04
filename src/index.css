@@ -15,7 +15,7 @@
 
 @layer components {
    .container {
-      @apply sm:w-[540px] md:w-[750px] lg:w-[970px] xl:w-[1170px] 2xl:w-[1320px] mx-auto px-4
+      @apply sm:w-[540px] md:w-[750px] lg:w-[970px] xl:w-[1170px] 2xl:w-[1320px] mx-auto px-4 h-full
    }
 }
 

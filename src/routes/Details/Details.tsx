@@ -50,7 +50,7 @@ export default function CountryDetails() {
               <Row label="Languages">{languages.map(l => l.nativeName).join(',')}</Row>
             </ul>
           </div>
-          {borders?.length > 0 && <div className="flex items-center flex-wrap gap-[1rem]">
+          {borders!.length > 0 && <div className="flex items-center flex-wrap gap-[1rem]">
             <h1 className="font-semibold text-lg mr-2">Border Countries:</h1>
             <div className="flex flex-wrap gap-[.5rem]">
               {borders?.map(border => 

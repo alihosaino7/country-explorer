@@ -60,11 +60,11 @@ const Select: React.FC<SelectProps> = memo(({ value, onChange }) => {
    return (
       <div ref={selectRef} className="relative">
          <div
-            className="flex justify-between items-center relative bg-white dark:bg-dark-blue w-[240px] h-[50px] p-2 px-4 rounded-md shadow-md focus:outline-none"
+            className="flex justify-between items-center relative bg-white dark:bg-dark-blue w-full md:w-[240px] h-[50px] p-2 px-4 rounded-md shadow-lighter focus:outline-none"
             onClick={handleSelectClick}
          >
-            <p className="text-black dark:text-v-light-gray">{value || 'Filter by Region'}</p>
-            <RiArrowDownSLine className="text-dark-gray dark:text-light-gray hover:dark:text-v-light-gray hover:text-black" />
+            <p className={`${value ? "text-black" : "text-[#999]"} dark:text-v-light-gray`}>{value || 'Filter by Region'}</p>
+            <RiArrowDownSLine className="text-dark-gray text-xl cursor-pointer dark:text-light-gray hover:dark:text-v-light-gray hover:text-black" />
          </div>
          {isOpen && (
             <ul className="absolute left-0 w-full overflow-hidden bg-white dark:bg-dark-blue text-center rounded-md shadow-md top-full mt-1">

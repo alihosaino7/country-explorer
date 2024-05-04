@@ -17,7 +17,8 @@ export default {
       boxShadow: {
         nav: '0 2px 4px 0 rgba(0,0,0,0.1)',
         light: '0 2px 6px 0 rgba(0,0,0,0.1)',
-        btn: '0 0 6px 0 rgba(0,0,0,0.2)'
+        btn: '0 0 6px 0 rgba(0,0,0,0.2)',
+        lighter: '2px 2px 4px 0 rgba(0,0,0,0.1)'
       },
       colors: {
         'dark-blue': 'hsl(209, 23%, 22%)', // (Dark Mode Elements)
